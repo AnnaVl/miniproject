@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <script type="text/javascript" src="obj.js"></script> -->
+  <script type="text/javascript" src="miniproekti.js"></script>
+  <title></title>
+  <style type="text/css">
+    input{
+
+       width: 600px;
+      background: lavender  ;
+      padding: 8px;
+      padding-right: 600px;
+      border: solid 1px ;
+      border-radius: 4px;
+       margin-right: 100px;
+       margin-left: 200px;
+      margin-top: 5px;
+
+    }
+    p{
+      width: 600px;
+      margin-right: 100px;
+       margin-left: 200px;
+      margin-top: 5px;
+      font-size: 12px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <input type = "button" id='js' value="JavaScript"></input >
+    <p id="p1">
+      JavaScript — прототипно-ориентированный сценарный язык программирования.
+       Является реализацией языка ECMAScript.
+      JavaScript обычно используется как встраиваемый язык для программного доступа к объектам приложений.
+      Наиболее широкое применение находит в браузерах как язык сценариев для придания интерактивности веб-страницам.
+    </p>
+  <input type="button" id="jq" value="JQuery"></input>
+    <p id="p2">
+      jQuery — библиотека JavaScript, фокусирующаяся на взаимодействии JavaScript и HTML.
+      Библиотека jQuery помогает легко получать доступ к любому элементу DOM,
+      обращаться к атрибутам и содержимому элементов DOM, манипулировать ими.
+      Также библиотека jQuery предоставляет удобный API для работы с AJAX.
+      Сейчас разработка jQuery ведётся командой jQuery во главе с Джоном Резигом.
+    </p>
+  <input type="button" id="dom" value="DOM"></input >
+    <p id="p3">
+      DOM — это не зависящий от платформы и языка программный интерфейс,
+      позволяющий программам и скриптам получить доступ к содержимому HTML-,
+      XHTML- и XML-документов, а также изменять содержимое, структуру и оформление таких документов.
+    </p>
+  <input type="button" id="css" value="CSS"></input>
+    <p id="p4">CSS — формальный язык описания внешнего вида документа, написанного с использованием языка разметки.</p>
+
+  <script type="text/javascript">
+
+
+    var inp = document.getElementById("js").onclick =function(){
+
+       var p1 = document.getElementById('p1');
+       p1.style.display = (p1.style.display == "none" )? 'block' : "none";
+
+    };
+     document.getElementById("jq").onclick =function(){
+
+       var p2 = document.getElementById('p2');
+       p2.style.display = (p2.style.display == "none" )? 'block' : "none";
+     };
+
+     document.getElementById("dom").onclick =function(){
+
+       var p3 = document.getElementById('p3');
+       p3.style.display = (p3.style.display == "none" )? 'block' : "none";
+     };
+
+     document.getElementById("css").onclick =function(){
+
+       var p4 = document.getElementById('p4');
+       p4.style.display = (p4.style.display == "none" )? 'block' : "none";
+     };
+
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
